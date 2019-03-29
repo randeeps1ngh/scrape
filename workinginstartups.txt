@@ -1,0 +1,7 @@
+Sitemap 1 - scrapes jobs listed with grey background
+{"_id":"wis1","startUrl":["https://workinstartups.com/job-board/jobs/interns/?p=[1-7]"],"selectors":[{"id":"grey","type":"SelectorLink","parentSelectors":["_root"],"selector":"li.job-row a.job-row-link","multiple":true,"delay":0},{"id":"title","type":"SelectorText","parentSelectors":["grey"],"selector":"h1","multiple":false,"regex":"","delay":0},{"id":"company","type":"SelectorLink","parentSelectors":["grey"],"selector":"a strong","multiple":false,"delay":0}]}
+
+
+Sitemap 2 - scrapes jobs listed with white background
+{"_id":"wis2","startUrl":["https://workinstartups.com/job-board/jobs/interns/?p=[1-7]"],"selectors":[{"id":"white","type":"SelectorLink","parentSelectors":["_root"],"selector":"li.job-row-alt:nth-of-type(n+2) a.job-row-link","multiple":true,"delay":0},{"id":"title","type":"SelectorText","parentSelectors":["white"],"selector":"h1","multiple":false,"regex":"","delay":0},{"id":"salary","type":"SelectorText","parentSelectors":["white"],"selector":"p.sub-salary","multiple":false,"regex":"","delay":0},{"id":"company","type":"SelectorLink","parentSelectors":["white"],"selector":"a strong","multiple":false,"delay":0}]}
+
