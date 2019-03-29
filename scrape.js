@@ -13,7 +13,7 @@ for (let i=1; i<=5; i++){
        
         //error messages
         console.log('It did not work');
-        console.log(response.statusCode + error);
+        console.log(response.statusCode);
         console.log(error);
         
     }
