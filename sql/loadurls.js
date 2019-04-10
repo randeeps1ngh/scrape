@@ -8,7 +8,7 @@ var tableName = 'startups';
 var con = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "Brian123***",
+    password: "XXXXX",
     database: databaseName
   });
 
