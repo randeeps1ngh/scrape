@@ -5,6 +5,8 @@ var datafile = require('./urlsdata.json')
 var databaseName = 'jobs';
 var tableName = 'startups';
 
+// for future we look options to make password encrypted 
+
 var con = mysql.createConnection({
     host: "localhost",
     user: "root",
@@ -13,6 +15,8 @@ var con = mysql.createConnection({
   });
 
   con.connect(function(err) {
+      // we need to log the error and then throw it - ideally log it with small message - db connection issue 
+      
     if (err) throw err;
     //console.log("Connected!");
     var sql = `INSERT INTO ${tableName} (title, url) VALUES ?`;
